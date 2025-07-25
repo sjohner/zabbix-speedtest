@@ -18,7 +18,7 @@ Based on [zabbix-speedtest-template](https://github.com/sebastian13/zabbix-templ
 
 ## How to
 
-### Install official ookla speedtest cli
+### Install official Ookla Speedtest CLI
 ```bash
 apt install curl
 curl -s https://packagecloud.io/install/repositories/ookla/speedtest-cli/script.deb.sh | sudo bash
@@ -38,7 +38,7 @@ curl -LO [https://raw.githubusercontent.com/sebastian13/zabbix-template-speedtes
 chmod +x speedtest-zabbix.sh
 ```
 
-Modify the server ID to match the speedtest server of your ISP
+Modify the server ID to match the speedtest server of your ISP or any other near your location.
 
 ```bash
 # Set ID of server you want to use for the speed test
