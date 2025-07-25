@@ -2,9 +2,9 @@
 
 Monitoring internet bandwidth using speedtest and zabbix. The script uses `zabbix_sender` to send the values to a Zabbix Server. The interval is set via cron.
 
-Uses:
+Tested with Ubuntu 24.04 and uses:
 * ([ookla speedtest cli](https://www.speedtest.net/apps/cli))
-* Zabbix Sender
+* ([zabbix sender](https://www.zabbix.com/documentation/current/en/manpages/zabbix_sender))
 * Cron
 
 Based on ([zabbix-speedtest-template](https://github.com/sebastian13/zabbix-template-speedtest)) and modified to use ([ookla speedtest cli](https://www.speedtest.net/apps/cli)) and a specific speedtest server.
@@ -16,10 +16,9 @@ Based on ([zabbix-speedtest-template](https://github.com/sebastian13/zabbix-temp
 ### Graphs
 ![Graphs](screenshots/graph.png)
 
+## How to
 
-## How to Use
-
-1. Install official ([ookla speedtest cli](https://www.speedtest.net/apps/cli))
+### Install official ookla speedtest cli
 
 ```bash
 apt install curl
@@ -27,12 +26,12 @@ curl -s https://packagecloud.io/install/repositories/ookla/speedtest-cli/script.
 apt install speedtest
 ```
 
-2. Install ([zabbix sender](https://www.zabbix.com/documentation/current/en/manpages/zabbix_sender))
+### Install zabbix sender
 ```bash
 apt install zabbix-sender
 ```
 
-3. Download and update `speedtest-zabbix.sh`
+### Download and update `speedtest-zabbix.sh`
 
 ```bash
 mkdir -p /etc/zabbix/scripts
@@ -69,7 +68,7 @@ Closest servers:
  30002  WWZ Telekom AG                 Zug                  Switzerland
 ```
 
-4. Create Cronjob
+### Create Cronjob
 
 The following cronjob will run the speedtest script every 30min
 ```bash
@@ -79,4 +78,4 @@ crontab -e
 */30 * * * * /etc/zabbix/scripts/speedtest-zabbix.sh >/dev/null
 ```
 
-5. Import the Template `zbx_template_speedtest.xml` to Zabbix and assign in to a server.
+### Import the Template `zbx_template_speedtest.xml` to Zabbix and assign in to a server.
