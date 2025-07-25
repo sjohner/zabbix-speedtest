@@ -7,7 +7,7 @@ Tested with Ubuntu 24.04 and uses:
 * [zabbix sender](https://www.zabbix.com/documentation/current/en/manpages/zabbix_sender)
 * Cron
 
-Based on [zabbix-speedtest-template](https://github.com/sebastian13/zabbix-template-speedtest) and modified to use [Ookla speedtest CLI](https://www.speedtest.net/apps/cli) and a specific speedtest server.
+Based on [zabbix-speedtest-template](https://github.com/sebastian13/zabbix-template-speedtest)
 
 ## Screenshots
 ### Gathered Data
