@@ -38,7 +38,7 @@ curl -LO [https://raw.githubusercontent.com/sebastian13/zabbix-template-speedtes
 chmod +x speedtest-zabbix.sh
 ```
 
-When encountering an error that speedtest repository does not have a Release file, work around by modifying `/etc/apt/sources.list.d/ookla_speedtest-cli.list` according to [Ookla Support](https://support.ookla.com/hc/en-us/articles/32139787616141-Ubuntu-24-04-noble)
+When encountering an error that speedtest repository does not have a Release file, work around by modifying `/etc/apt/sources.list.d/ookla_speedtest-cli.list` (see [Ookla Support page](https://support.ookla.com/hc/en-us/articles/32139787616141-Ubuntu-24-04-noble).
 
 Modify the server ID to match the speedtest server of your ISP or any other near your location.
 
