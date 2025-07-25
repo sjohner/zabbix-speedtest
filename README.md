@@ -1,6 +1,6 @@
 # Zabbix Internet Speedtest
 
-Monitoring internet bandwidth using speedtest and zabbix. The script uses `zabbix_sender` to send the values to a Zabbix Server. The interval is set via cron.
+Monitoring internet bandwidth with zabbix. Based on a scheduled script that uses Ookla Speedtest CLI and `zabbix_sender` to send the speedtest results to a Zabbix Server. The interval is set via cron.
 
 Tested with Ubuntu 24.04 and uses:
 * [Ookla Speedtest CLI](https://www.speedtest.net/apps/cli)
