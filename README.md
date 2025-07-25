@@ -1,43 +1,82 @@
-# Zabbix Template: Speedtest
+# Zabbix Internet Speedtest
 
 Monitoring internet bandwidth using speedtest and zabbix. The script uses `zabbix_sender` to send the values to a Zabbix Server. The interval is set via cron.
+
+Uses:
+* ([ookla speedtest cli](https://www.speedtest.net/apps/cli))
+* Zabbix Sender
+* Cron
+
+Based on ([zabbix-speedtest-template](https://github.com/sebastian13/zabbix-template-speedtest)) and modified to use ([ookla speedtest cli](https://www.speedtest.net/apps/cli)) and a specific speedtest server.
 
 ## Screenshots
 ### Gathered Data
 ![Latest Data](screenshots/data.png)
 
 ### Graphs
-![Triggers](screenshots/graph-up-down.png)
+![Graphs](screenshots/graph.png)
 
 
 ## How to Use
 
-1. Install ([ookla speedtest cli](https://www.speedtest.net/apps/cli))
+1. Install official ([ookla speedtest cli](https://www.speedtest.net/apps/cli))
 
-	```bash
-	curl -Lo /usr/bin/speedtest-cli https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py
-	chmod +x /usr/bin/speedtest-cli
-	```
+```bash
+apt install curl
+curl -s https://packagecloud.io/install/repositories/ookla/speedtest-cli/script.deb.sh | sudo bash
+apt install speedtest
+```
 
-1. Download `speedtest-zabbix.sh`
+2. Install ([zabbix sender](https://www.zabbix.com/documentation/current/en/manpages/zabbix_sender))
+   ```bash
+apt install zabbix-sender
+```
 
-	```bash
-	mkdir -p /etc/zabbix/scripts
-	cd /etc/zabbix/scripts
-	curl -LO https://raw.githubusercontent.com/sebastian13/zabbix-template-speedtest/master/scripts/speedtest-zabbix.sh
-	chmod +x speedtest-zabbix.sh
-	```
+3. Download and update `speedtest-zabbix.sh`
 
-1. Create Cron
+```bash
+mkdir -p /etc/zabbix/scripts
+cd /etc/zabbix/scripts
+curl -LO [https://raw.githubusercontent.com/sebastian13/zabbix-template-speedtest/master/scripts/speedtest-zabbix.sh](https://raw.githubusercontent.com/sjohner/zabbix-speedtest/refs/heads/master/scripts/speedtest-zabbix.sh)
+chmod +x speedtest-zabbix.sh
+```
 
-	```bash
-	curl -Lo /etc/cron.d/speedtest-zabbix https://raw.githubusercontent.com/sebastian13/zabbix-template-speedtest/master/speedtest-zabbix.cron
-	service cron reload
-	```
+Modify the server ID to match the speedtest server of your ISP
 
-1. Import the Template `zbx_template_speedtest.xml` to Zabbix and assign in to a server.
+```bash
+# Set ID of server you want to use for the speed test
+ID=<SERVER ID>
+```
+You can use `speedtest -L` to a list of nearest servers. 
 
-### Additional Resources
+```
+speedtest -L
 
-- [Manpage: Zabbix Sender](https://www.zabbix.com/documentation/current/manpages/zabbix_sender)
-- [Usage: Speedtest-CLI](https://github.com/sivel/speedtest-cli)
+Closest servers:
+
+    ID  Name                           Location             Country
+==============================================================================
+ 23969  Sunrise Communication AG       Zurich               Switzerland
+ 23723  SolNet                         Solothurn            Switzerland
+ 12660  Quickline AG                   Nidau                Switzerland
+ 42840  joelmueller.ch                 Bern                 Switzerland
+ 28472  Wingo AG                       Olten                Switzerland
+ 48663  IWB Telekom                    Basel                Switzerland
+ 70179  dyonix OÜ                     Nottwil              Switzerland
+ 49631  Arcade Solutions AG            Luzern               Switzerland
+ 16402  Wifx SA                        Yverdon-les-Bains    Switzerland
+ 31102  GIB-Solutions AG               Schlieren            Switzerland
+ 30002  WWZ Telekom AG                 Zug                  Switzerland
+```
+
+4. Create Cronjob
+
+The following cronjob will run the speedtest script every 30min
+```bash
+crontab -e
+
+# m h  dom mon dow   command
+*/30 * * * * /etc/zabbix/scripts/speedtest-zabbix.sh >/dev/null
+```
+
+5. Import the Template `zbx_template_speedtest.xml` to Zabbix and assign in to a server.
