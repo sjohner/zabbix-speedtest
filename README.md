@@ -28,7 +28,7 @@ apt install speedtest
 ```
 
 2. Install ([zabbix sender](https://www.zabbix.com/documentation/current/en/manpages/zabbix_sender))
-   ```bash
+```bash
 apt install zabbix-sender
 ```
 
