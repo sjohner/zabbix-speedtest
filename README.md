@@ -7,7 +7,7 @@ Tested with Ubuntu 24.04 and uses:
 * ([zabbix sender](https://www.zabbix.com/documentation/current/en/manpages/zabbix_sender))
 * Cron
 
-Based on ([zabbix-speedtest-template](https://github.com/sebastian13/zabbix-template-speedtest)) and modified to use ([ookla speedtest cli](https://www.speedtest.net/apps/cli)) and a specific speedtest server.
+Based on ([zabbix-speedtest-template](https://github.com/sebastian13/zabbix-template-speedtest)) and modified to use ([Ookla speedtest CLI](https://www.speedtest.net/apps/cli)) and a specific speedtest server.
 
 ## Screenshots
 ### Gathered Data
@@ -19,7 +19,6 @@ Based on ([zabbix-speedtest-template](https://github.com/sebastian13/zabbix-temp
 ## How to
 
 ### Install official ookla speedtest cli
-
 ```bash
 apt install curl
 curl -s https://packagecloud.io/install/repositories/ookla/speedtest-cli/script.deb.sh | sudo bash
@@ -32,7 +31,6 @@ apt install zabbix-sender
 ```
 
 ### Download and update `speedtest-zabbix.sh`
-
 ```bash
 mkdir -p /etc/zabbix/scripts
 cd /etc/zabbix/scripts
@@ -69,7 +67,6 @@ Closest servers:
 ```
 
 ### Create Cronjob
-
 The following cronjob will run the speedtest script every 30min
 ```bash
 crontab -e
@@ -78,4 +75,9 @@ crontab -e
 */30 * * * * /etc/zabbix/scripts/speedtest-zabbix.sh >/dev/null
 ```
 
-### Import the Template `zbx_template_speedtest.xml` to Zabbix and assign in to a server.
+### Import the Template
+Import the `zbx_template_speedtest.xml` to Zabbix and assign in to a server.
+
+Adjust the triggers to match your internet bandwidth. Since Oakla CLI machine readable formats (json is used in this case) use bytes as the unit of measure, trigger expressions need to take this into account.
+
+![Triggers](screenshots/triggers.png)
