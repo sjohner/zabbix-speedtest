@@ -3,11 +3,11 @@
 Monitoring internet bandwidth using speedtest and zabbix. The script uses `zabbix_sender` to send the values to a Zabbix Server. The interval is set via cron.
 
 Tested with Ubuntu 24.04 and uses:
-* ([ookla speedtest cli](https://www.speedtest.net/apps/cli))
-* ([zabbix sender](https://www.zabbix.com/documentation/current/en/manpages/zabbix_sender))
+* [Ookla Speedtest CLI](https://www.speedtest.net/apps/cli)
+* [zabbix sender](https://www.zabbix.com/documentation/current/en/manpages/zabbix_sender)
 * Cron
 
-Based on ([zabbix-speedtest-template](https://github.com/sebastian13/zabbix-template-speedtest)) and modified to use ([Ookla speedtest CLI](https://www.speedtest.net/apps/cli)) and a specific speedtest server.
+Based on [zabbix-speedtest-template](https://github.com/sebastian13/zabbix-template-speedtest) and modified to use [Ookla speedtest CLI](https://www.speedtest.net/apps/cli) and a specific speedtest server.
 
 ## Screenshots
 ### Gathered Data
