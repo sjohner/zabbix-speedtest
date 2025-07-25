@@ -1,11 +1,6 @@
 # Zabbix Template: Speedtest
 
-Monitoring internet bandwidth using speedtest and zabbix. The script uses `zabbix_sender` to send the values to a Zabbix Server. The interval is set via cron. To get different results the script will randomly choose one of the 10 closest servers each runtime.
-
-Inspired by
-
-- https://git.cdp.li/polcape/zabbix/tree/master/zabbix-speedtest
-- https://github.com/sk3pp3r/speedtest2zabbix
+Monitoring internet bandwidth using speedtest and zabbix. The script uses `zabbix_sender` to send the values to a Zabbix Server. The interval is set via cron.
 
 ## Screenshots
 ### Gathered Data
@@ -17,7 +12,7 @@ Inspired by
 
 ## How to Use
 
-1. Install [Speedtest-Cli](https://github.com/sivel/speedtest-cli)
+1. Install ([ookla speedtest cli](https://www.speedtest.net/apps/cli))
 
 	```bash
 	curl -Lo /usr/bin/speedtest-cli https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py
