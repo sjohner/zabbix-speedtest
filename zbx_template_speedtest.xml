@@ -1,542 +1,245 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<zabbix_export>
-    <version>4.2</version>
-    <date>2019-08-28T14:40:25Z</date>
-    <groups>
-        <group>
-            <name>Templates</name>
-        </group>
-    </groups>
-    <templates>
-        <template>
-            <template>Speedtest</template>
-            <name>Speedtest</name>
-            <description/>
-            <groups>
-                <group>
-                    <name>Templates</name>
-                </group>
-            </groups>
-            <applications>
-                <application>
-                    <name>Speedtest</name>
-                </application>
-            </applications>
-            <items>
-                <item>
-                    <name>Download</name>
-                    <type>2</type>
-                    <snmp_community/>
-                    <snmp_oid/>
-                    <key>speedtest.download</key>
-                    <delay>0</delay>
-                    <history>90d</history>
-                    <trends>365d</trends>
-                    <status>0</status>
-                    <value_type>0</value_type>
-                    <allowed_hosts/>
-                    <units>bps</units>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <params/>
-                    <ipmi_sensor/>
-                    <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description/>
-                    <inventory_link>0</inventory_link>
-                    <applications>
-                        <application>
-                            <name>Speedtest</name>
-                        </application>
-                    </applications>
-                    <valuemap/>
-                    <logtimefmt/>
-                    <preprocessing/>
-                    <jmx_endpoint/>
-                    <timeout>3s</timeout>
-                    <url/>
-                    <query_fields/>
-                    <posts/>
-                    <status_codes>200</status_codes>
-                    <follow_redirects>1</follow_redirects>
-                    <post_type>0</post_type>
-                    <http_proxy/>
-                    <headers/>
-                    <retrieve_mode>0</retrieve_mode>
-                    <request_method>0</request_method>
-                    <output_format>0</output_format>
-                    <allow_traps>0</allow_traps>
-                    <ssl_cert_file/>
-                    <ssl_key_file/>
-                    <ssl_key_password/>
-                    <verify_peer>0</verify_peer>
-                    <verify_host>0</verify_host>
-                    <master_item/>
-                </item>
-                <item>
-                    <name>Ping</name>
-                    <type>2</type>
-                    <snmp_community/>
-                    <snmp_oid/>
-                    <key>speedtest.ping</key>
-                    <delay>0</delay>
-                    <history>90d</history>
-                    <trends>365d</trends>
-                    <status>0</status>
-                    <value_type>0</value_type>
-                    <allowed_hosts/>
-                    <units>ms</units>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <params/>
-                    <ipmi_sensor/>
-                    <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description/>
-                    <inventory_link>0</inventory_link>
-                    <applications>
-                        <application>
-                            <name>Speedtest</name>
-                        </application>
-                    </applications>
-                    <valuemap/>
-                    <logtimefmt/>
-                    <preprocessing/>
-                    <jmx_endpoint/>
-                    <timeout>3s</timeout>
-                    <url/>
-                    <query_fields/>
-                    <posts/>
-                    <status_codes>200</status_codes>
-                    <follow_redirects>1</follow_redirects>
-                    <post_type>0</post_type>
-                    <http_proxy/>
-                    <headers/>
-                    <retrieve_mode>0</retrieve_mode>
-                    <request_method>0</request_method>
-                    <output_format>0</output_format>
-                    <allow_traps>0</allow_traps>
-                    <ssl_cert_file/>
-                    <ssl_key_file/>
-                    <ssl_key_password/>
-                    <verify_peer>0</verify_peer>
-                    <verify_host>0</verify_host>
-                    <master_item/>
-                </item>
-                <item>
-                    <name>Server City</name>
-                    <type>2</type>
-                    <snmp_community/>
-                    <snmp_oid/>
-                    <key>speedtest.srv.city</key>
-                    <delay>0</delay>
-                    <history>90d</history>
-                    <trends>0</trends>
-                    <status>0</status>
-                    <value_type>4</value_type>
-                    <allowed_hosts/>
-                    <units/>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <params/>
-                    <ipmi_sensor/>
-                    <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description/>
-                    <inventory_link>0</inventory_link>
-                    <applications>
-                        <application>
-                            <name>Speedtest</name>
-                        </application>
-                    </applications>
-                    <valuemap/>
-                    <logtimefmt/>
-                    <preprocessing/>
-                    <jmx_endpoint/>
-                    <timeout>3s</timeout>
-                    <url/>
-                    <query_fields/>
-                    <posts/>
-                    <status_codes>200</status_codes>
-                    <follow_redirects>1</follow_redirects>
-                    <post_type>0</post_type>
-                    <http_proxy/>
-                    <headers/>
-                    <retrieve_mode>0</retrieve_mode>
-                    <request_method>0</request_method>
-                    <output_format>0</output_format>
-                    <allow_traps>0</allow_traps>
-                    <ssl_cert_file/>
-                    <ssl_key_file/>
-                    <ssl_key_password/>
-                    <verify_peer>0</verify_peer>
-                    <verify_host>0</verify_host>
-                    <master_item/>
-                </item>
-                <item>
-                    <name>Server Distance (km)</name>
-                    <type>2</type>
-                    <snmp_community/>
-                    <snmp_oid/>
-                    <key>speedtest.srv.km</key>
-                    <delay>0</delay>
-                    <history>90d</history>
-                    <trends>365d</trends>
-                    <status>0</status>
-                    <value_type>0</value_type>
-                    <allowed_hosts/>
-                    <units>km</units>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <params/>
-                    <ipmi_sensor/>
-                    <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description/>
-                    <inventory_link>0</inventory_link>
-                    <applications>
-                        <application>
-                            <name>Speedtest</name>
-                        </application>
-                    </applications>
-                    <valuemap/>
-                    <logtimefmt/>
-                    <preprocessing/>
-                    <jmx_endpoint/>
-                    <timeout>3s</timeout>
-                    <url/>
-                    <query_fields/>
-                    <posts/>
-                    <status_codes>200</status_codes>
-                    <follow_redirects>1</follow_redirects>
-                    <post_type>0</post_type>
-                    <http_proxy/>
-                    <headers/>
-                    <retrieve_mode>0</retrieve_mode>
-                    <request_method>0</request_method>
-                    <output_format>0</output_format>
-                    <allow_traps>0</allow_traps>
-                    <ssl_cert_file/>
-                    <ssl_key_file/>
-                    <ssl_key_password/>
-                    <verify_peer>0</verify_peer>
-                    <verify_host>0</verify_host>
-                    <master_item/>
-                </item>
-                <item>
-                    <name>Server Name</name>
-                    <type>2</type>
-                    <snmp_community/>
-                    <snmp_oid/>
-                    <key>speedtest.srv.name</key>
-                    <delay>0</delay>
-                    <history>90d</history>
-                    <trends>0</trends>
-                    <status>0</status>
-                    <value_type>4</value_type>
-                    <allowed_hosts/>
-                    <units/>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <params/>
-                    <ipmi_sensor/>
-                    <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description/>
-                    <inventory_link>0</inventory_link>
-                    <applications>
-                        <application>
-                            <name>Speedtest</name>
-                        </application>
-                    </applications>
-                    <valuemap/>
-                    <logtimefmt/>
-                    <preprocessing/>
-                    <jmx_endpoint/>
-                    <timeout>3s</timeout>
-                    <url/>
-                    <query_fields/>
-                    <posts/>
-                    <status_codes>200</status_codes>
-                    <follow_redirects>1</follow_redirects>
-                    <post_type>0</post_type>
-                    <http_proxy/>
-                    <headers/>
-                    <retrieve_mode>0</retrieve_mode>
-                    <request_method>0</request_method>
-                    <output_format>0</output_format>
-                    <allow_traps>0</allow_traps>
-                    <ssl_cert_file/>
-                    <ssl_key_file/>
-                    <ssl_key_password/>
-                    <verify_peer>0</verify_peer>
-                    <verify_host>0</verify_host>
-                    <master_item/>
-                </item>
-                <item>
-                    <name>Upload</name>
-                    <type>2</type>
-                    <snmp_community/>
-                    <snmp_oid/>
-                    <key>speedtest.upload</key>
-                    <delay>0</delay>
-                    <history>90d</history>
-                    <trends>365d</trends>
-                    <status>0</status>
-                    <value_type>0</value_type>
-                    <allowed_hosts/>
-                    <units>bps</units>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <params/>
-                    <ipmi_sensor/>
-                    <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description/>
-                    <inventory_link>0</inventory_link>
-                    <applications>
-                        <application>
-                            <name>Speedtest</name>
-                        </application>
-                    </applications>
-                    <valuemap/>
-                    <logtimefmt/>
-                    <preprocessing/>
-                    <jmx_endpoint/>
-                    <timeout>3s</timeout>
-                    <url/>
-                    <query_fields/>
-                    <posts/>
-                    <status_codes>200</status_codes>
-                    <follow_redirects>1</follow_redirects>
-                    <post_type>0</post_type>
-                    <http_proxy/>
-                    <headers/>
-                    <retrieve_mode>0</retrieve_mode>
-                    <request_method>0</request_method>
-                    <output_format>0</output_format>
-                    <allow_traps>0</allow_traps>
-                    <ssl_cert_file/>
-                    <ssl_key_file/>
-                    <ssl_key_password/>
-                    <verify_peer>0</verify_peer>
-                    <verify_host>0</verify_host>
-                    <master_item/>
-                </item>
-                <item>
-                    <name>WAN IP</name>
-                    <type>2</type>
-                    <snmp_community/>
-                    <snmp_oid/>
-                    <key>speedtest.wan.ip</key>
-                    <delay>0</delay>
-                    <history>90d</history>
-                    <trends>0</trends>
-                    <status>0</status>
-                    <value_type>4</value_type>
-                    <allowed_hosts/>
-                    <units/>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <params/>
-                    <ipmi_sensor/>
-                    <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description/>
-                    <inventory_link>0</inventory_link>
-                    <applications>
-                        <application>
-                            <name>Speedtest</name>
-                        </application>
-                    </applications>
-                    <valuemap/>
-                    <logtimefmt/>
-                    <preprocessing/>
-                    <jmx_endpoint/>
-                    <timeout>3s</timeout>
-                    <url/>
-                    <query_fields/>
-                    <posts/>
-                    <status_codes>200</status_codes>
-                    <follow_redirects>1</follow_redirects>
-                    <post_type>0</post_type>
-                    <http_proxy/>
-                    <headers/>
-                    <retrieve_mode>0</retrieve_mode>
-                    <request_method>0</request_method>
-                    <output_format>0</output_format>
-                    <allow_traps>0</allow_traps>
-                    <ssl_cert_file/>
-                    <ssl_key_file/>
-                    <ssl_key_password/>
-                    <verify_peer>0</verify_peer>
-                    <verify_host>0</verify_host>
-                    <master_item/>
-                </item>
-            </items>
-            <discovery_rules/>
-            <httptests/>
-            <macros/>
-            <templates/>
-            <screens>
-                <screen>
-                    <name>Speedtest Status</name>
-                    <hsize>1</hsize>
-                    <vsize>1</vsize>
-                    <screen_items>
-                        <screen_item>
-                            <resourcetype>0</resourcetype>
-                            <width>500</width>
-                            <height>100</height>
-                            <x>0</x>
-                            <y>0</y>
-                            <colspan>1</colspan>
-                            <rowspan>1</rowspan>
-                            <elements>0</elements>
-                            <valign>0</valign>
-                            <halign>0</halign>
-                            <style>0</style>
-                            <url/>
-                            <dynamic>0</dynamic>
-                            <sort_triggers>0</sort_triggers>
-                            <resource>
-                                <name>Speedtest Upload vs Download</name>
-                                <host>Speedtest</host>
-                            </resource>
-                            <max_columns>3</max_columns>
-                            <application/>
-                        </screen_item>
-                    </screen_items>
-                </screen>
-            </screens>
-            <tags/>
-        </template>
-    </templates>
-    <triggers>
-        <trigger>
-            <expression>{Speedtest:speedtest.wan.ip.diff(0)}&gt;0</expression>
-            <recovery_mode>0</recovery_mode>
-            <recovery_expression/>
-            <name>External IP Changed</name>
-            <correlation_mode>0</correlation_mode>
-            <correlation_tag/>
-            <url/>
-            <status>0</status>
-            <priority>2</priority>
-            <description/>
-            <type>0</type>
-            <manual_close>0</manual_close>
-            <dependencies/>
-            <tags/>
-        </trigger>
-    </triggers>
-    <graphs>
-        <graph>
-            <name>Speedtest Upload vs Download</name>
-            <width>900</width>
-            <height>200</height>
-            <yaxismin>0.0000</yaxismin>
-            <yaxismax>100.0000</yaxismax>
-            <show_work_period>0</show_work_period>
-            <show_triggers>0</show_triggers>
-            <type>0</type>
-            <show_legend>1</show_legend>
-            <show_3d>0</show_3d>
-            <percent_left>0.0000</percent_left>
-            <percent_right>0.0000</percent_right>
-            <ymin_type_1>0</ymin_type_1>
-            <ymax_type_1>0</ymax_type_1>
-            <ymin_item_1>0</ymin_item_1>
-            <ymax_item_1>0</ymax_item_1>
-            <graph_items>
-                <graph_item>
-                    <sortorder>0</sortorder>
-                    <drawtype>2</drawtype>
-                    <color>1A7C11</color>
-                    <yaxisside>0</yaxisside>
-                    <calc_fnc>4</calc_fnc>
-                    <type>0</type>
-                    <item>
-                        <host>Speedtest</host>
-                        <key>speedtest.download</key>
-                    </item>
-                </graph_item>
-                <graph_item>
-                    <sortorder>1</sortorder>
-                    <drawtype>2</drawtype>
-                    <color>000066</color>
-                    <yaxisside>0</yaxisside>
-                    <calc_fnc>4</calc_fnc>
-                    <type>0</type>
-                    <item>
-                        <host>Speedtest</host>
-                        <key>speedtest.upload</key>
-                    </item>
-                </graph_item>
-            </graph_items>
-        </graph>
-    </graphs>
-</zabbix_export>
+zabbix_export:
+  version: '7.4'
+  template_groups:
+    - uuid: 7df96b18c230490a9a0a9e2307226338
+      name: Templates
+  templates:
+    - uuid: 9daa55f388e94272af1cacad9807e847
+      template: Speedtest
+      name: Speedtest
+      groups:
+        - name: Templates
+      items:
+        - uuid: 0235cd698a344267bd700cde79e267a3
+          name: Download
+          type: TRAP
+          key: speedtest.download
+          history: 90d
+          value_type: FLOAT
+          units: bps
+          preprocessing:
+            - type: MULTIPLIER
+              parameters:
+                - '8'
+          tags:
+            - tag: Application
+              value: Speedtest
+          triggers:
+            - uuid: 878dfcb25d0b43cea865073c68a95726
+              expression: 'last(/Speedtest/speedtest.download,#1)<125000000'
+              name: 'Download Speed Degraded'
+              priority: WARNING
+              description: 'Create problem if download speed drops below 100Mbps'
+        - uuid: e8c3affb49dd4315b305f934874f006f
+          name: ISP
+          type: TRAP
+          key: speedtest.isp
+          history: 90d
+          value_type: TEXT
+          tags:
+            - tag: Application
+              value: Speedtest
+        - uuid: a4f0bb23f9be48408794edf44be18e62
+          name: 'Ping Jitter'
+          type: TRAP
+          key: speedtest.ping.jitter
+          history: 90d
+          value_type: FLOAT
+          tags:
+            - tag: Application
+              value: Speedtest
+        - uuid: 39c21c42893a4467bdb9540c3b253803
+          name: 'Ping Latency'
+          type: TRAP
+          key: speedtest.ping.latency
+          history: 90d
+          value_type: FLOAT
+          units: ms
+          tags:
+            - tag: Application
+              value: Speedtest
+        - uuid: 176bf5b911394e2f82694f80782e2192
+          name: 'Server City'
+          type: TRAP
+          key: speedtest.srv.city
+          history: 90d
+          value_type: TEXT
+          tags:
+            - tag: Application
+              value: Speedtest
+        - uuid: 35ba8a35fbf742e4b3abe7bd13e27d11
+          name: 'Server Name'
+          type: TRAP
+          key: speedtest.srv.name
+          history: 90d
+          value_type: TEXT
+          tags:
+            - tag: Application
+              value: Speedtest
+        - uuid: 3331a707a6ed423c80d779665a6bbf32
+          name: Upload
+          type: TRAP
+          key: speedtest.upload
+          history: 90d
+          value_type: FLOAT
+          units: Bps
+          preprocessing:
+            - type: MULTIPLIER
+              parameters:
+                - '8'
+          tags:
+            - tag: Application
+              value: Speedtest
+          triggers:
+            - uuid: 822cca0fb44a4d02843cbdcc4762e776
+              expression: 'last(/Speedtest/speedtest.upload,#1)<50000000'
+              name: 'Upload Speed Degraded'
+              priority: WARNING
+              description: 'Create problem if download speed drops below 100Mbps'
+              manual_close: 'YES'
+        - uuid: acacbbd035c949c789a1d2d2a9b9f258
+          name: 'WAN IP'
+          type: TRAP
+          key: speedtest.wan.ip
+          history: 90d
+          value_type: TEXT
+          tags:
+            - tag: Application
+              value: Speedtest
+      dashboards:
+        - uuid: 387785bcebee495e915a44c5075b5019
+          name: 'Speedtest Status'
+          pages:
+            - widgets:
+                - type: svggraph
+                  name: 'Speedtest Download vs Upload'
+                  width: '60'
+                  height: '6'
+                  fields:
+                    - type: INTEGER
+                      name: ds.0.color_palette
+                      value: '0'
+                    - type: STRING
+                      name: ds.0.items.0
+                      value: Download
+                    - type: STRING
+                      name: ds.0.items.1
+                      value: Upload
+                    - type: STRING
+                      name: reference
+                      value: UUIHS
+                    - type: INTEGER
+                      name: righty
+                      value: '0'
+                - type: svggraph
+                  name: 'Speedtest Ping Latency vs Jitter'
+                  'y': '6'
+                  width: '60'
+                  height: '6'
+                  fields:
+                    - type: INTEGER
+                      name: ds.0.color_palette
+                      value: '0'
+                    - type: STRING
+                      name: ds.0.items.0
+                      value: 'Ping Jitter'
+                    - type: STRING
+                      name: ds.0.items.1
+                      value: 'Ping Latency'
+                    - type: STRING
+                      name: reference
+                      value: TZQAG
+                    - type: INTEGER
+                      name: righty
+                      value: '0'
+                - type: problems
+                  name: Problems
+                  x: '60'
+                  width: '12'
+                  height: '6'
+                  fields:
+                    - type: STRING
+                      name: reference
+                      value: HOTNL
+                    - type: INTEGER
+                      name: severities.0
+                      value: '0'
+                    - type: INTEGER
+                      name: severities.1
+                      value: '1'
+                    - type: INTEGER
+                      name: severities.2
+                      value: '2'
+                    - type: INTEGER
+                      name: severities.3
+                      value: '3'
+                    - type: INTEGER
+                      name: severities.4
+                      value: '4'
+                    - type: INTEGER
+                      name: severities.5
+                      value: '5'
+                    - type: INTEGER
+                      name: tags.0.operator
+                      value: '0'
+                    - type: STRING
+                      name: tags.0.tag
+                      value: Application
+                    - type: STRING
+                      name: tags.0.value
+                      value: Speedtest
+                - type: item
+                  name: 'Server Location'
+                  x: '60'
+                  'y': '6'
+                  width: '12'
+                  height: '3'
+                  fields:
+                    - type: ITEM
+                      name: itemid.0
+                      value:
+                        host: Speedtest
+                        key: speedtest.srv.city
+                    - type: INTEGER
+                      name: show.0
+                      value: '2'
+                    - type: INTEGER
+                      name: show.1
+                      value: '4'
+                - type: item
+                  name: 'Speedtest Server'
+                  x: '60'
+                  'y': '9'
+                  width: '12'
+                  height: '3'
+                  fields:
+                    - type: ITEM
+                      name: itemid.0
+                      value:
+                        host: Speedtest
+                        key: speedtest.srv.name
+                    - type: INTEGER
+                      name: show.0
+                      value: '2'
+                    - type: INTEGER
+                      name: show.1
+                      value: '4'
+  graphs:
+    - uuid: 8934ca31c4a14171a67575556ac2cec9
+      name: 'Speedtest Upload vs Download'
+      show_work_period: 'NO'
+      show_triggers: 'NO'
+      graph_items:
+        - drawtype: BOLD_LINE
+          color: 1A7C11
+          calc_fnc: MAX
+          item:
+            host: Speedtest
+            key: speedtest.download
+        - sortorder: '1'
+          drawtype: BOLD_LINE
+          color: '000066'
+          calc_fnc: MAX
+          item:
+            host: Speedtest
+            key: speedtest.upload
